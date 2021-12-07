@@ -142,11 +142,11 @@ while i < 10:
         error = 1
   #END TURN
 
-  if game[r][c] == "-":
+    if game[r][c] == "-":
       game[r][c] = "O"
-  else:
-    print("there is already a marker at ", c, ", ", r, " try again")
-  print_board()
+    else:
+      print("there is already a marker at ", c, ", ", r, " try again")
+    print_board()
 
   #PLAY AGAIN
   if win()==True or i == 9:
